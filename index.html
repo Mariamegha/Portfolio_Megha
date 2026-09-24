@@ -341,9 +341,23 @@
             color: var(--color-text-primary);
         }
 
+        .btn-connect {
+            background-color: var(--color-accent-violet);
+            border-color: var(--color-accent-violet);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+
         .btn-secondary:hover {
             border-color: var(--color-accent-violet);
             color: var(--color-accent-violet);
+        }
+
+        .btn-connect:hover {
+            border-color: var(--color-accent-violet);
+            color: white;
+            transform: scale(1.02);
+            box-shadow: 0px 0px 24px rgba(128, 131, 255, 0.4);
         }
 
         .hero-status {
@@ -1610,7 +1624,7 @@
                                 <path d="M1 5.333h8m0 0L6.333 1m3.667 4.333L6.333 9.667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <button class="btn btn-secondary" onclick="smoothScroll('#contact')">
+                        <button class="btn btn-secondary btn-connect" onclick="smoothScroll('#contact')">
                             Let's connect
                             <svg width="10.667" height="10.667" viewBox="0 0 10.667 10.667" fill="none">
                                 <path d="M1 5.333h8m0 0L6.333 1m3.667 4.333L6.333 9.667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1653,7 +1667,7 @@
             <h2 class="section-title fade-in-up" style="--stagger-index: 1;">A Little About Me</h2>
 
             <p class="about-intro fade-in-up" style="--stagger-index: 2;">
-                I'm a Computer Science student at Bangalore, deeply passionate about software engineering, AI/ML systems, and building scalable cloud infrastructure. Over the past two years, I've worked with industry leaders at Amazon and Zoho, designing data pipelines, infrastructure monitoring systems, and deploying ML models at scale.
+                I'm a Computer Science student at Chennai Institute of Technology, deeply passionate about software engineering, AI/ML systems, and building scalable cloud infrastructure. Over the past two years, I've worked with industry leaders at Amazon and Zoho, designing data pipelines, infrastructure monitoring systems, and deploying ML models at scale.
             </p>
 
             <div class="stats-grid fade-in-up" style="--stagger-index: 3;">
@@ -1705,7 +1719,7 @@
                 <div class="experience-text">
                     <div class="experience-meta">JULY 2024 — PRESENT</div>
                     <h3 class="experience-title">Software Development Engineer Intern</h3>
-                    <div class="experience-company">Amazon Web Services / Platform Engineering</div>
+                    <div class="experience-company">Amazon Web Services / Platform Engineering • Bangalore</div>
                     <p class="experience-description">
                         Engineered high-throughput data processing workflows with Scala, Apache Spark, and AWS Step Functions. Designed resilient orchestration pipelines that cleaned, transformed, and indexed large-scale operational records into internal search indices and dashboard tooling.
                     </p>
@@ -2206,7 +2220,7 @@
 
             <div class="timeline fade-in-up" style="--stagger-index: 3;">
                 <div class="milestone">
-                    <div class="milestone-year">2025</div>
+                    <div class="milestone-year">Nov 2025</div>
                     <div class="milestone-content">
                         <h4 class="milestone-title">HackSetu 1.0 — 1st Runner-Up</h4>
                         <p class="milestone-description">National Level • Architecture, Resiliency & Usability Award across 1,000+ entries</p>
@@ -2214,23 +2228,15 @@
                 </div>
 
                 <div class="milestone">
-                    <div class="milestone-year">2025</div>
+                    <div class="milestone-year">Dec 2025</div>
                     <div class="milestone-content">
-                        <h4 class="milestone-title">Smart India Hackathon (SIH) — Finalist</h4>
-                        <p class="milestone-description">Shortlisted nationally for government problem statement solving real-time civic issues</p>
+                        <h4 class="milestone-title">HACK-A-THON</h4>
+                        <p class="milestone-description">National-level hackathon experience building and presenting an applied software solution</p>
                     </div>
                 </div>
 
                 <div class="milestone">
-                    <div class="milestone-year">2024–2025</div>
-                    <div class="milestone-content">
-                        <h4 class="milestone-title">Amazon — Software Development Engineer Intern</h4>
-                        <p class="milestone-description">Scale data orchestration with Scala, Spark, and AWS Step Functions</p>
-                    </div>
-                </div>
-
-                <div class="milestone">
-                    <div class="milestone-year">2024</div>
+                    <div class="milestone-year">Nov–Dec 2025</div>
                     <div class="milestone-content">
                         <h4 class="milestone-title">Zoho Corporation — DevOps & Telemetry Intern</h4>
                         <p class="milestone-description">Site24x7 infrastructure monitoring agents and distributed log validation</p>
@@ -2238,10 +2244,26 @@
                 </div>
 
                 <div class="milestone">
-                    <div class="milestone-year">2024</div>
+                    <div class="milestone-year">May–June 2026</div>
                     <div class="milestone-content">
-                        <h4 class="milestone-title">Dual AWS Certification Milestone</h4>
-                        <p class="milestone-description">AWS Certified Cloud Practitioner & AWS AI Foundations verified credentials</p>
+                        <h4 class="milestone-title">Amazon — Software Development Engineer Intern</h4>
+                        <p class="milestone-description">Scale data orchestration with Scala, Spark, and AWS Step Functions in Bangalore</p>
+                    </div>
+                </div>
+
+                <div class="milestone">
+                    <div class="milestone-year">Aug 2026</div>
+                    <div class="milestone-content">
+                        <h4 class="milestone-title">AWS AI Foundations</h4>
+                        <p class="milestone-description">Verified credential in generative AI and machine learning foundations on AWS</p>
+                    </div>
+                </div>
+
+                <div class="milestone">
+                    <div class="milestone-year">Sep 2026</div>
+                    <div class="milestone-content">
+                        <h4 class="milestone-title">AWS Cloud Practitioner</h4>
+                        <p class="milestone-description">Verified credential covering AWS cloud concepts, architecture, security, and services</p>
                     </div>
                 </div>
             </div>
@@ -2287,7 +2309,7 @@
                         </div>
                     </div>
                     <div class="cert-card-footer">
-                        <span class="cert-card-footer-left">Active & Verified Credential ↗</span>
+                        <a class="cert-card-footer-left" href="https://drive.google.com/file/d/1QAgQ7cFM7J9k9gU7aH5iifnX3vutDioT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Active & Verified Credential ↗</a>
                         <span class="cert-card-footer-right">ID: AWS-CCP-2024</span>
                     </div>
                 </div>
@@ -2315,7 +2337,7 @@
                         </div>
                     </div>
                     <div class="cert-card-footer">
-                        <span class="cert-card-footer-left">Completed & Certified ↗</span>
+                        <a class="cert-card-footer-left" href="https://drive.google.com/file/d/1yFym1DVS-LMVSVhveAwikhGp72SVnSZt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Completed & Certified ↗</a>
                         <span class="cert-card-footer-right">ID: AWS-AIF-2024</span>
                     </div>
                 </div>
